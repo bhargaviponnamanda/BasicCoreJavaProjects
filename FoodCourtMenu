@@ -1,0 +1,114 @@
+import java.util.Scanner;
+
+public class MenuList {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Welcome to FamousFoodCourt.com");
+		System.out.println("");
+
+		// Creating a MenuList
+
+		while (true) {
+			System.out.println("To Order Andhra dishes, Enter 1");
+			System.out.println("To Order Hyderabadi dishes Dish, Enter 2");
+			System.out.println("To Order Chennai dishes, Enter 3");
+			System.out.println("To Order Banglore dishes, Enter 4");
+			System.out.println("To Order kerala dishes, Enter 5");
+			System.out.println("To Order Rajastani dishes, Enter 6");
+			System.out.println("To Exit, Enter 9");
+			System.out.println("");
+			System.out.println("Please Enter your Choice::");
+
+			int choice = scan.nextInt();
+
+			switch (choice) {
+
+			case 1:
+				System.out.println("Welcome to the Food Court for Andhra Dishes");
+				andhraFood();
+				break;
+
+			case 2:
+				System.out.println("Welcome to the Food Court for Hyderabadi Dishes");
+				hyderabadiFood();
+				break;
+
+			case 3:
+				System.out.println("Welcome to the Food Court for Chennai Dishes");
+				chennaiFood();
+				break;
+
+			case 4:
+				System.out.println("Welcome to the Food Court for Banglore Dishes");
+				bangloreFood();
+				break;
+
+			case 5:
+				System.out.println("Welcome to the Food Court for Kerala Dishes");
+				keralaFood();
+				break;
+
+			case 6:
+				System.out.println("Welcome to the Food Court for Rajastani Dishes");
+				rajastaniFood();
+				break;
+
+			case 9:
+				System.out.println("Thanks for Ordering from our App. Visit again");
+				System.exit(0);
+				break;
+			}
+
+		}
+
+	}
+
+	private static void rajastaniFood() {
+		System.out.println("You get:");
+		System.out.println("Dal baati Churma : 4 Pieces:");
+		System.out.println("Mohan Thaal : 2 Pieces:");
+		System.out.println("Pyaaz ki Kachori : 1 Plate:");
+		System.out.println("");
+	}
+
+	private static void keralaFood() {
+		System.out.println("You get:");
+		System.out.println("Puttu & Kadala Curry : 1 Plate:");
+		System.out.println("Malabar Parota : 2 Pieces:");
+		System.out.println("Kheema Rice : 1 Plate:");
+		System.out.println("");
+	}
+
+	private static void bangloreFood() {
+		System.out.println("You get:");
+		System.out.println("Uttappam : 2 Pieces:");
+		System.out.println("Vad Pav : 1 Plate:");
+		System.out.println("Biryani : 1 Plate:");
+		System.out.println("");
+	}
+
+	private static void chennaiFood() {
+		System.out.println("You get:");
+		System.out.println("Fish fry : 2 Pieces:");
+		System.out.println("Aavakaay rice : 1 Plate:");
+		System.out.println("Biryani : 1 Plate:");
+		System.out.println("");
+	}
+
+	private static void hyderabadiFood() {
+		System.out.println("You get:");
+		System.out.println("Mutton Biryani : 1 Plate:");
+		System.out.println("Veg Biryani : 1 Plate:");
+		System.out.println("Chicken Biryani : 1 Plate:");
+		System.out.println("");
+	}
+
+	private static void andhraFood() {
+		System.out.println("You get:");
+		System.out.println("Fish fry : 2 Pieces:");
+		System.out.println("Chicken Curry : 1 Plate:");
+		System.out.println("Spicy Mutton Biryani : 1 Plate:");
+		System.out.println("");
+	}
+}
